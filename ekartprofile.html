@@ -1,0 +1,594 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    
+<link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href={% static "profileamazon.css" %}>
+<link rel="stylesheet" type="text/css"  href={% static "bootstrap.css" %}>
+    <link rel="stylesheet" type="text/css" href={% static "datepicker.css" %}>
+
+</head>
+<style>
+body{overflow-y:hidden;
+     overflow-x:hidden;
+	 }
+body{
+     
+	 background-repeat:no-repeat;
+    background-image:url("https://images.pexels.com/photos/1573859/pexels-photo-1573859.jpeg?cs=srgb&dl=assortment-bright-candy-1573859.jpg&fm=jpg");
+	background-position: fixed;
+	 background-repeat:no-repeat;
+	 background-size:cover;
+	 background-size:100%;
+	 font-family: Arial, Helvetica, sans-serif;
+	}
+.topnav{
+    overflow: hidden;
+	background-color: black; /* Fallback color */
+opacity: 0.9;
+	height:70px;
+    width:1380px;
+	text-decoration: none;
+	margin: -10px -8px -8px -8px;
+	
+    }
+	
+button.topnav{
+
+margin-left:20px;
+padding:14.5px 20px 14px 13px;
+}
+	
+button.topnav:hover{
+font-size:17px;
+margin-left:20px;
+padding:14.5px 20px 14px 13px;
+}
+img{
+	width:70px;
+	height:70px;
+	}
+h2{
+	font-family:Comic Sans MS;
+	margin-left:40px;
+	}
+#a{  margin-right:30px;
+	 float:right;
+	 padding:10px;
+	 width:126px;
+	 height:126px;
+     margin-top:1.1%}
+
+hr{
+ margin-top:13px; 
+ color:black;
+ width:40%;
+ margin-right:70%;
+   }
+  .amazon{
+		width:30%;
+	    margin-bottom:0px
+	font-family:Comic Sans MS;
+	    margin-top:10px;
+		margin-left:14px;
+		font-size:25px;
+		color:black;
+		font-family:Comic Sans MS;
+		 
+		 }
+.content{
+    font-size:15px;
+    background-color: white;
+	opacity:0.9;
+	margin-left:-80px;
+	margin-top:20px;
+	color:rgb(60, 60, 60);
+    width: 256px;
+	height: 313px;
+    border: 5px solid  black ;
+	 border-bottom-color: red;
+    padding: 15px;
+    
+    margin-left:30px;
+	font-family:Comic Sans MS;
+    text-align: justify;
+	}
+div.content:hover{
+	 @include content-border-slide(pink, purple, 7px, 0.8s);
+	 cursor:pointer;
+	background-clip:padding-box;
+	background-color:white;
+	font-size:15px;
+	font-weight:bold;
+	opacity:0.7;
+	color:black
+	;
+		-moz-box-shadow:    3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow:  5px 5px 8px 9px #ccc;
+	}
+form{
+	background-color:black;
+	opacity:0.7;
+	width:350px;
+	padding:10px;
+	padding-right:-82px;
+	   
+	   
+	}
+form.inputnot{
+     margin-left:-2px;
+
+}
+form:hover{
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow:  5px 5px 8px 9px #ccc;
+		cursor:pointer;
+
+}
+
+span{
+    color:rgb(60, 60, 60);
+    }
+.footer{
+margin-bottom:-1.1px;
+    position: fixed;
+    left: 0;
+    bottom: 1px;;
+    width: 100%;
+	height: 50px;
+    background-color:black ;
+	opacity:0.5;
+    color: white;
+    text-align: center;
+}
+div.footer:hover{
+
+
+background-color:black;
+opacity:0.7;
+}
+#mouse{ 
+        
+        margin-top:17px;
+		cursor: pointer;
+		font-size:17px;
+		font-family:Comic Sans MS;
+	  }
+#details{
+color:white;
+margin:5px;
+		margin-top:44px;
+		font-size:25px; 
+		font-family:Comic Sans MS;
+		margin-left:20px; 
+		text-decoration:none;
+	   
+	    }	
+#estimate{   font-size:20px;
+			 text-align:right;
+			font-family:Comic Sans MS;
+			 margin-right: 95px;
+             margin-top: 200px;
+	   
+		 }
+#item{
+        border-radius:7px;
+		width:65%;
+		float:right;
+		padding:3px;
+		margin-top:-60px;
+		margin-left:-2px;
+		margin-bottom:-5px;}
+.checktext{
+        float:right;
+		padding:9px;
+		margin-top:10px;
+	    margin-right:240px;
+		font-family:Comic Sans MS;
+		font-size:15px;
+			}
+			
+#estimate1{   font-size:20px;
+			 text-align:right;
+			 font-family:Comic Sans MS;
+			 margin-left:46px;
+	   margin-top:-150px;
+	   margin-bottom:-10px;
+		 }
+#calander{
+        border-radius:7px;
+		width:65%;
+		float:right;
+		padding:3px;
+		margin-top:-90px;
+	    
+		}			
+
+.checkbutton{
+        cursor: pointer;
+        padding:14.5px 20px 14px 20px;
+	    font-size:17px;
+		margin-top:-18%;
+	    margin-right:72%;
+        font-family:Comic Sans MS;
+		font-size:14px;
+		border-radius: 8px;
+        background-color:green;
+        opacity:0.9;
+        color:white;		
+		width:90px;	 
+			 }
+button.checkbutton:hover{
+background-color:green;
+opacity:0.6;
+font-size:17px;
+}
+#verticalline{ 
+        height:50px;
+		float:right;
+		border-right: 2px solid green;
+		margin-top:2%;
+		margin-right:50%;
+		align:center;		
+				
+				}
+.thought{
+	    color:white;
+		font-size:35px;
+		margin: 32px;
+		font-family:Comic Sans MS;
+		
+		}
+.city{      margin-top:-232px;
+			 font-size:21px;
+			 text-align:right;
+			 font-family:Comic Sans MS;
+			 margin-right:333px;		
+				}
+header.sideheader:hover{
+	
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow:  3px 3px 5px 6px #ccc;
+	}
+div.sidebar:hover{
+	
+	-moz-box-shadow:    3px 3px 5px 6px #ccc;
+        -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+        box-shadow:  5px 5px 8px 9px #ccc;
+	}
+.col-75 {
+	margin-left:100px;
+    float: left;
+    width: 85px;
+    margin-top: -230px;}
+#country{
+
+	margin-bottom:-5px;
+	border-radius:7px;
+	width:77%;
+	padding:3px;
+	margin-top:-20px;	}
+ 
+ button       {
+		background-color: green;
+		padding:14.5px 22px 16px 19px;
+		color: white;
+		margin:4px;
+		margin-top:12px;
+	font-family:Comic Sans MS;
+		border: none;
+		cursor: pointer;
+		width: 70px;
+		float:right;
+		margin-left:20px;
+		margin-right: 30px;
+		border-radius:2px;
+		}
+ button:hover
+        {
+		opacity:0.9;
+		background-color:green;
+		}
+.sidebar{
+overflow: scroll;
+margin-top:30px;
+        font-color:white;
+	    position: relative; /* Stay in place */
+		z-index:1; /* Sit on top */
+		left:-167px;
+		top: 155px;
+		margin-left:60px;
+		width:453px; /* Full width */
+		height: 570px; /* Full height */
+		background-color:black;
+/* Fallback color */
+        opacity:0.6;
+		 /* Black w/ opacity */
+		padding-top: 30px;
+		bottom:30px;
+		overflow-x:hidden;
+		}
+		
+.sideheader{
+         background-color: rgb(23, 22, 43); /* Fallback color */
+		background-color: rgba(0, 0, 4, 0.7);
+		 color:white;
+		 
+		 font-size: 14px;
+		 font-family:Comic Sans MS;	
+		 padding:15px  46px 17px 130px;
+		margin-top:10px;
+		margin-left:40px;
+		margin-right:12px;
+		margin-bottom: -69px;
+	}
+.sidetext{
+        color:white;
+		padding-right: 15px;	}
+.sidetext3{
+         paddin:2px;
+		 margin-top:-10px;	}			
+
+ li.sidetext {  font-size: 18px;
+    font-family: Comic Sans MS;
+    color: white;
+    margin-left: 60px;
+    margin-right: 20px;
+	overflow-x:hidden;
+}
+div.ex3 {margin-left:-84px;
+   margin-top:70px;
+margin-right:7px;
+    height: 460px;
+    width:497px;
+ overflow:hidden;
+ padding-left:30px;
+	}
+
+
+
+		
+/*bootstrap....... */	
+ @media screen and (max-width: 1300px) {
+		 
+	.amazon{
+		width:30%;
+	   
+	    margin-top:55px
+	    margin-left:2px;
+		font-size:25px;
+		color:black;
+		font-family:Courier New;
+		 margin-bottom:-30px;
+		 }
+		 
+	.content{
+		font-size:10px;
+		background-color: white;
+		opacity:0.4;
+		margin-top:60px;
+		color:rgb(60, 60, 60);
+		width: 190px;
+		height: 240px;
+		border: 3px solid orange;
+		padding: 5px;
+	
+		margin-left:5px;
+		font-family:Courier New;
+		text-align: justify;
+	}
+	#details{
+	 font-size:20px; 
+	 font-family:Courier New;
+	 margin-left:5.6px; 
+	 text-decoration:none;
+	 margin-bottom:-60px;
+     margin-top:13px;	
+	}	
+#estimate{   font-size:16px;
+			 text-align:left;
+			 font-family:Courier New;
+			 margin-left:-79%;
+			 
+			 
+			 
+	      }	
+#item{
+        border-radius:5px;
+		width:29%;
+		float:left;
+		padding:2px;
+		margin-top:-7px;
+
+		}
+.checktext{
+        float:left;
+		padding:5px;
+		margin-top:-2px;
+	    margin-left:-83%;
+		font-family: Courier New;
+		font-size:12px;
+			}
+.checkbutton{
+        cursor: pointer;
+        float:left;
+		padding:4px;
+		margin-top:1%;
+	    margin-left:-116%;
+		font-family: Courier New;
+		font-size:12px;
+		border-radius: 8px;
+        background-color:green;
+        opacity:0.6;
+        color:white;		
+		width:80px;	 
+			 }
+.model{
+	    font-color:white;
+	    position: relative; /* Stay in place */
+		z-index:1; /* Sit on top */
+		left:-110px;
+		top: 80px;
+		width: 50%; /* Full width */
+		height: 180px; /* Full height */
+		background-color: rgb(23, 22, 43,0.7); /* Fallback color */
+		background-color: rgb (0, 0, 4, 0.5); /* Black w/ opacity */
+		padding-top: 30px;
+		margin-bottom:30%;
+	
+		font-family:'Dancing Script', cursive;
+
+	
+	}
+.thought{
+	    color:white;
+		font-size:12px;
+		margin: 13px;
+		font-family:'Dancing Script', cursive;
+		
+		}
+.city{      margin-top:-160px;
+			 font-size:19px;
+			 text-align:left;
+			 font-family:Courier New;
+			 margin-left:-80%;		
+				}
+.col-75 {
+	margin-left:-116%;
+    float: left;
+    width: 85%;
+    margin-top: -130px;}
+#country{
+	width:47%;
+	padding:5px;
+	margin-bottom:10%;
+		}
+	}
+	/*bootstrap.... */
+
+	
+</style>
+<header>
+<div class="topnav">
+ <img src= {% static "img/logo.png" %}>
+
+<button onclick="redirect()">Logout</button></div>
+</header>
+<div class="div1">
+
+<body>
+<div class="container-fluid">
+  <div class="row">
+  
+   <div class="col-sm-4" >
+   
+<div>
+<div>
+<p class="amazon" ><a class="amazon" style=" text-decoration:none;" href={{ weblink }}> {{ company }}</a></p>
+<a style="text-decoration:none; font-family:Courier New; color:black; "></a>
+</div><br>
+<p id="details"> Details</p>
+<div class="content" style="border: 5px solid  rgba(14, 11, 11, 0.82);">
+Username	&nbsp;&nbsp;	 :{{ company }} <br>
+About&nbsp;	:{{ company_details }}
+</div>
+</div>
+</div>
+
+    <div class="col-sm-4" >
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <form method="post">
+            {% csrf_token %}
+             <select id="country" name="country" style="width:260px;height:40px;	margin-bottom:5px;
+	border-radius:7px;padding:3px;margin-top:10px;margin-right:60px"required>
+
+          <option value="australia">Ambala</option>
+
+      </select><br>
+   <label for="item">
+<input style="  border-radius:7px;
+		width:260px;
+		height:40px;
+		
+		padding:3px;
+		margin-top:0px;
+		
+		margin-bottom:90px;" type="number" id="item"  name="item" placeholder="enter parcels" min="1" max="100" required value={{ item }}><br>
+</label>
+       <label for="calander" class="inputnot" >
+<input style=" border-radius:7px;
+		width:260px;
+		height:40px;
+		
+		padding:3px;
+
+		margin-left:-2px" type="date" id="calander"  name="calander" placeholder="enter the date" min="2018-11-22" max="2018-12-30"required value={{ calander }}><br>
+</label>
+    <button class="checkbutton">Go</button>
+
+            </form>
+
+<div class="col-75">
+<br><br>
+
+      </div>
+
+</div>
+
+<div class="col-sm-4" >
+		
+		<header class="sideheader">History/Details</header>
+		<div class="ex3">
+		<div class="sidebar" style="margin-left:56%;margin-top:-39.5%;overflow:hidden;">
+			
+		<ol class="sidetext"><li># Flipkart assign you 20 packages For 18/11/2018</li>
+		<li># Amazon assign you 3 packages For 28/11/2018</li>
+		<li># Flipkart assign you 19 packages For 24/11/2018</li>
+		<li># amazon assign you 15 packages For 18/11/2018</li>
+		</ol>
+		
+             </div>
+		</div>
+  
+</div>
+</div>
+</div>
+<div class="footer">
+  <p id="mouse" style="color:white;" onclick="pageRedirect()">Help</p>
+</div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $("#calander").datepicker({startDate: '+0d',
+    endDate: '+2m'});
+  });
+ </script>
+ <script>
+function redirect() {
+    window.location.href="/dlogout";
+
+	}
+function pageRedirect() {
+    window.location.href="/about";
+
+	}
+
+	</script>
+</html>

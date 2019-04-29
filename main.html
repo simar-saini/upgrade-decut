@@ -1,0 +1,429 @@
+{% load static %}
+<!DOCTYPE  html>
+<html>
+<head>
+
+</head>
+<style>
+html{overflow-y:hidden;
+overflow-x:hidden;}
+body {
+     background-image: url("https://images.pexels.com/photos/60561/winter-snow-nature-60561.jpeg?cs=srgb&dl=cold-snow-white-60561.jpg&fm=jpg");
+	 background-position: fixed;
+	 background-repeat:no-repeat;
+	 background-size:100%;
+	 
+	  margin: 0;
+	  font-family: Arial, Helvetica, sans-serif;
+	  }
+.navigation
+        {background: #010103;
+		 opacity:0.6;
+		
+         }
+.navigation a
+        {
+		text-decoration:none;
+		 float: left;
+		 color: #ECE9E9 ;
+		 text-align: center;
+		 padding:14.5px 20px 14px 20px;
+		 display:block;
+		 font-size: 17px;
+		 }
+.navigation a:hover
+		 {
+		 background-color: grey;
+		 opacity: 0.5;
+		 color: white;
+		 }
+		 
+.navigation button{
+padding:14.5px 20px 14px 20px;
+background-color:green;
+margin-top:-30px;
+}
+		 
+/* modal ..... */
+
+.modal {
+		font-color:white;
+			
+		position: relative; /* Stay in place */
+		z-index:1; /* Sit on top */
+		left: 15px;
+		top: 42px;
+		width:26%; /* Full width */
+		height: 470px; /* Full height */
+		background-color: #0D0C0C; /* Black w/ opacity */
+		padding-top: 30px;
+		bottom:30px;
+		margin-right:130px;
+		}
+div.modal:hover{
+
+-moz-box-shadow:    3px 3px 5px 6px grey;
+        -webkit-box-shadow: 3px 3px 5px 6px grey;
+        box-shadow:  5px 5px 8px 9px grey;
+
+}
+.header{margin-top:-17px;
+		height:40px;
+		background-color:white;
+		opacity:0.65;
+		}
+.header a{
+		  float: left;
+		 color:black ;
+		 text-align: center;
+		 padding: 9px 154px;
+		 text-decoration: none;
+		 font-size: 18px;
+		font-family:Comic Sans MS;
+			}
+p  {
+	 font-size: 18px;
+	 font-family:Comic Sans MS;
+	 color:white;
+	 margin-left:20px;
+	 margin-right:120px;
+	}
+h4{
+	margin-left:111px;
+	color:white;
+	margin-top:-36.5px;
+	}
+h4:hover {
+    text-decoration: underline;
+}
+.entry{
+        box-sizing: content-box;
+        width: 12%;
+		border:3px solid white;
+		color:black;
+		padding:3px;
+		margin-left:170px;
+		border-radius:7px;
+		margin-top:-53px;
+		
+			}
+			
+	.beforeline{	
+			    font-size:30px;
+				color:white;
+					
+					
+					}		
+	.insidetext{margin-top:-68px;	
+			    font-size:16px;
+				margin-left:40px;
+					
+					}
+	.hr{
+	  width:86%;
+		}
+	.packetext{
+				color:white;
+				font-size:17px;
+				
+				}
+    .cost{
+		margin-left:132px;
+		margin-top:-40px;
+		font-size:17px;}
+			
+	.cost:hover{
+	      text-decoration: underline;	
+					}
+	.output{
+		color:white;
+		text-align:top;
+		display:inline;
+				}
+	.output:hover{
+	         text-decoration: underline;
+					}
+	.depadding{padding:10px;
+	     margin-bottom: 0px;
+         margin-right: 0px;
+	     margin-top: 0px;
+         width:317px;
+        font-size:17px;	
+         margin-left:8px;		
+				}
+	.charge{
+	     font-size:17px;
+		 display:inline;
+		 margin-left:14px;
+			}
+    .ambala{
+	      color:white;
+		margin:-5px;
+		margin-left:250px;
+		font-family:Comic Sans MS;
+			}
+	 button
+        {
+		background-color: #4CAF50;
+		color: white;
+		padding: 10px 12px;
+		border: none;
+		cursor: pointer;
+		width: 70px;
+		float:right;
+		margin-top:-29px;
+		margin-right: 17px;
+		border-radius:4px;}
+ button:hover
+        {
+		opacity:0.6;
+		}
+.assignbutton{ background-color:green;
+	         padding:10px;
+			 border-radius:4px;
+             margin-top:30px;			 
+		     margin-right:40px;
+				}	
+.assignbutton:hover{
+						opacity:0.6;
+						}				
+/* model-2......*/
+
+.modal-1 {
+		font-color:white;
+	    position: relative; /* Stay in place */
+		z-index:1; /* Sit on top */
+		left: 380px;
+		top: -458px;
+		width:26%; /* Full width */
+		height: 470px; /* Full height */
+		background-color: #0D0C0C; /* Black w/ opacity */
+		padding-top: 30px;
+		bottom:30px;
+		}
+div.modal-1:hover{
+
+-moz-box-shadow:    3px 3px 5px 6px grey;
+        -webkit-box-shadow: 3px 3px 5px 6px grey;
+        box-shadow:  5px 5px 8px 9px grey;
+
+}
+.header-1{margin-top:-17px;
+		height:40px;
+		background-color:white;
+		opacity:0.65;
+		}
+.header-1 a{
+		  float: left;
+		 color:black ;
+		 text-align: center;
+		 padding: 7px 154px;
+		 text-decoration: none;
+		 font-size: 18px;
+		font-family:Comic Sans MS;
+			}
+.assignbutton2{background-color:green;
+			 padding:10px;
+			 border-radius:4px;
+             margin-top:30px;			 
+		     margin-right:40px;
+				}
+.assignbutton2:hover{
+opacity:0.4;
+					}
+
+/* model-3......*/
+ .model-2 {
+        
+		font-color:white;
+	    position: relative; /* Stay in place */
+		z-index:1; /* Sit on top */
+		left: 80px;
+		top: -545.5px;
+		width:16%; /* Full width */
+		height: 470px; /* Full height */
+		background-color: #0D0C0C; /* Black w/ opacity */
+		padding-top: 30px;
+		bottom:30px;
+		
+		}
+.header-2{margin-top:-17px;
+		height:40px;
+		background-color:white;
+		}
+		
+.header-2 a{
+		  float: left;
+		 color:black ;
+		 text-align: center;
+		 padding: :7px 154px;
+		 text-decoration: none;
+		 font-size: 18px;
+		font-family:Comic Sans MS;
+			}
+	.charge3{
+			font-size:17px;
+		  top:60px;
+		    margin-left:14px;
+			margin-top:-6px;
+			}		
+			
+/*sidebar........*/
+
+
+.sidebar{
+        font-color:white;
+	    position: relative; /* Stay in place */
+		z-index:1; /* Sit on top */
+		left: 380px;
+		top: -458px;
+		width:16%; /* Full width */
+		height: 555px; /* Full height */
+		background-color: #0D0C0C; /* Black w/ opacity */
+		padding-top: 30px;
+		bottom:30px;
+		}
+		
+.sideheader{
+         background-color:white;
+		 opacity:0.65;
+		 color:black;
+		 font-size: 14.5px;
+		 font-family:Comic Sans MS;	
+		 padding:11px 40px;
+		margin-top:-18px;	
+			}
+.sidetext{
+        color:white;
+			}
+.sidetext3{
+         paddin:0px;
+		 margin-top:-10px;	}			
+
+ li.sidetext {  font-size: 18px;
+    font-family: Comic Sans MS;
+    color: white;
+    margin-left: 60px;
+    margin-right: 20px;
+}
+.assignbutton3{background-color:green;
+			 padding:10px;
+			 border-radius:4px;
+             margin-top:-29px;			 
+		     margin-right:40px;
+			
+				}
+.assignbutton3:hover{
+		opacity:0.4;
+				}
+	.tnt{
+		margin-top:-120%;
+		}
+</style>
+<body>
+<div class="row">
+ <div class="column left" style="30%;">
+<div class="navigation">
+
+ 
+<li> <a href="/pre" style="background-color:green;border-radius:4px;">Home</a></li>
+ <li><a style="margin-top:-17.5px;background-color:green;margin-left:2px;border-radius:4px;" href ="/feedback">Help</a><li>
+ <button type="submit" onclick="pageredirect()">Logout</button>
+ </div>
+
+  <div id="id01" class="modal">
+		<header class="header">
+		 <a href="https://www.aftership.com/couriers/ekart">Express</a>
+		</header>
+		<p>Product :&nbsp;</p>
+		<h4>{{ item }} &nbsp;+</h4>
+
+		<form oninput="x.value=parseInt(Exitem.value)" method="post">
+{% csrf_token %}
+			<label for="Exitem">
+		<input class="entry" id="Exitem" type="number" name="Exitem" min="1" max="100"required value={{ Exitem }}>
+				</label>
+        <text class="ambala"> ({{ state1 }})</text>
+        <p class="beforeline">* <p class="insidetext">Follow terms & Conditions</p></p>
+          <hr class="hr">
+        <p class="packetext"  > Cost /Packet =<p class="cost">&nbsp;&#x20b9;45</p></p>
+		<p class="depadding">Your number of packets =&nbsp;<output  class="output" name="x" for="Exitem"></output></p>
+		<p class="charge">You are getting charge =&nbsp;90</p>
+		<button class="assignbutton">Assign</button>
+			</form>
+		</div>
+	 </div>
+
+  <!--model-2......-->
+
+  <div class="column mid" style="30%;">
+      <div  class="modal-1">
+		<header class="header-1">
+		 <a href="https://www.aftership.com/couriers/ekart">Ekart</a>
+		</header>
+		<p>Product :&nbsp;</p>
+		<h4>7 &nbsp;+</h4>
+		<form oninput="x.value=parseInt(Eitem.value)" method="post">
+{% csrf_token %}
+			<label for="Eitem">
+				<input class="entry" id="Eitem" type="number" name="Eitem" min="1" max="100"required value={{ Eitem }}>
+		</label>
+
+
+			<text class="ambala"> ({{ state1 }})</text>
+         <p class="beforeline">* <p class="insidetext">Follow terms & Conditions</p></p>
+          <hr class="hr">
+        <p class="packetext"  > Cost /Packet =<p class="cost">&nbsp;&#x20b9;50</p></p>
+		<p class="depadding">Your number of packets =&nbsp;<output  class="output" name="x" for="Eitem"></output></p>
+		<p class="charge">You are getting charge =&nbsp;90</p>
+        <button class="assignbutton2">Assign</button>
+</form>
+
+    </div>
+  </div>
+
+ <!--model-3....-->
+
+
+<div class="columnlast" style="width:103%;margin-left:26.7%;margin-top:-36.5%;">
+      <div id="id01" class="modal-1">
+		<header class="header-1">
+		 <a href="https://www.aftership.com/couriers/ekart" class="tnt">BlueDart</a>
+		</header>
+		<p>Product :&nbsp;</p>
+		<h4>35 &nbsp;+</h4>
+		<form oninput="x.value=parseInt(Bitem.value)" method="post">
+			{% csrf_token %}
+			<div><label for="Bitem"></label>
+		<input class="entry" id="Bitem" type="number" name="Bitem" min="1" max="100"required value={{ Bitem }}>
+		</div>
+				<text class="ambala"> ({{ state1 }})</text>
+         <p class="beforeline">* <p class="insidetext">Follow terms & Conditions</p></p>
+          <hr class="hr">
+        <p class="packetext"  > Cost /Packet =<p class="cost">&nbsp;&#x20b9;38</p></p>
+		<p class="depadding">Your number of packets =&nbsp;<output  class="output" name="x" for="Bitem"></output></p>
+		<p class="charge3">You are getting charge =&nbsp;90</p>
+         <button class="assignbutton3">Assign</button>
+</form>
+
+    </div>
+    </div>
+<!--.........-->
+
+<div class="sidebar" style="margin-left:56%;margin-top:-39.5%;">
+<header class="sideheader">Terms & Conditions</header>
+<ol class="sidetext"><li># For one time per delivery company can handle 100 products (limit)</li><br><br>
+<li>#After crossing 100 products limit with respect to one company you can go for another company too.</li><br><br>
+<li>#Per company charging for one product may vary every new time</li>
+</ol>
+</div>
+  
+</div>
+  </body>
+<script>
+	function pageredirect(){
+	window.location.href="/dlogout";
+}
+</script>
+  </html>
+ 

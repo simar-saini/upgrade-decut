@@ -1,0 +1,154 @@
+{% load static %}
+<!DOCTYPE html}
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href={% static "decut.css"%}>
+<style>
+
+html{overflow-y:hidden;}
+body {
+     background-image: url("https://images.pexels.com/photos/1557547/pexels-photo-1557547.jpeg?cs=srgb&dl=buildings-city-evening-1557547.jpg&fm=jpg");
+	height:100%;
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+	
+	 font-family:Comic Sans MS;
+	 
+	  }
+.navigation1
+        {
+		 background-color:rgba(1, 2, 10, 0.74);
+		font-family:Comic Sans MS;
+		}
+.navigation1 a
+        {
+		font-family:Comic Sans MS;
+		 float: left;
+		 color: white ;
+		 text-align: center;
+		 padding: 18px 14px 16px;
+		 text-decoration: none;
+		 font-size: 17px;
+		 }
+.navigation1 a:hover
+		 {
+		 color:white;
+		 background-color: rgba(10, 119, 8, 0.72);
+		 opacity: 0.4;
+		 
+		 }
+button {
+    margin-top: -16px;
+    font-size:20px;
+    font-weight:bold;
+    display:inline;
+    color: white;
+    padding: 16px 22px 16px 22px;
+    margin: 8px 0 8px;
+	margin-left: 82%;
+    border: none;
+    cursor: pointer;    
+   border-radius:4px;
+	}
+.row:hover {
+    cursor: pointer;
+	 background-color:rgba(255, 255, 255, 0.5);
+	 color:black;
+	  box-shadow: 5px 10px rgba(255, 255, 255, 0.5);
+	  font-size:19px;
+}
+.row2:hover {
+    cursor: pointer;
+	 background-color:rgba(255, 255, 255, 0.5);
+	 color:black;
+	  box-shadow: 5px 10px rgba(255, 255, 255, 0.5);
+	 font-size:19px;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family:Comic Sans MS;
+}
+.row{
+         background-color:rgba(239, 247, 251, 0.25); /* Fallback color */
+         display:inline;
+         font-family:Comic Sans MS;
+		margin-left:40px;
+		margin-top:50px;
+		 color:black ;
+		 text-align: center;
+		 padding: 45px 14px 45px;
+		 text-decoration: none;
+		 font-size: 17px;
+		 -moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:  3px 3px 5px 6px #ccc;
+		 }
+.row2{	margin-left:60px;
+         background-color:rgba(239, 247, 251, 0.25);
+		 font-family:Comic Sans MS;
+		 color: black ;
+		 text-align: center;
+		 padding: 45px 14px 45px;
+		 text-decoration: none;
+		 font-size: 17px;
+-moz-box-shadow:    3px 3px 5px 6px #ccc;
+  -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+  box-shadow:         3px 3px 5px 6px #ccc;
+			}
+
+
+.push{
+		margin-left:130px;
+		
+
+		}
+		
+.help:hover{
+ color:white;
+		 background-color: rgba(10, 119, 8, 0.72);
+		 opacity: 0.4;
+		
+
+}
+</style>
+</head>
+<body>
+ <div class="navigation1" >
+  <a href="/pre"style="background-color:green;border-radius:4px;margin-top:6px;">Home</a>
+  <a href="/about"style="background-color:green;margin-left:2px;border-radius:4px;margin-top:6px;">About</a>
+  <button  class="help"onclick="pageRedirect()" style="width:auto;margin-top:6px;background-color:green;font-family:Comic Sans MS;">Help</button>
+  </div>
+<div>
+<div class="push">
+<button  class="row"onclick="pageRedirect1()" style="width:19%;height:27%;margin-left:60px;">Ecom - (Login)</button>
+ <button  class="row2"onclick="pageRedirect2()" style="width:19%;height:27%;">Ecom - (Signup) </button>
+ <button  class="row"onclick="pageRedirect3()" style="width:19%;height:27%;">Deli - (Login)</button>
+<button  class="row"onclick="pageRedirect4()" style="width:19%;height:27%;">Deli - (SinghUp)</button> </div>
+
+
+</body>
+<script>
+function pageRedirect() {
+    window.location.href="/feedback";
+	}
+	function pageRedirect1() {
+    window.location.href="/elogin";
+	}
+	function pageRedirect2() {
+    window.location.href="/signup";
+	}
+	function pageRedirect3() {
+    window.location.href="/dlogin";
+	}
+	function pageRedirect4() {
+    window.location.href="/dsignup";
+	}
+	</script>
+
+
+</html>
